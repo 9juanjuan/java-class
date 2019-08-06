@@ -36,5 +36,17 @@ public class Main {
         System.out.println("Long Miniumum Value" + myMinLongValue);
         System.out.println("Long Maximum Value" + myMaxLongValue);
 
+        int myTotal = (myMinIntValue / 2);
+        //  Casting
+        // unless variable is an int, casting needs to occur
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+        short myNewShortValue = (short) (myMinShortValue / 2); 
+
+        // P. Types challenge
+        byte myByte = 23; 
+        short myShort = 2344; 
+        int myInt = 2324; 
+        long myLong = 50000 + 10*(myByte + myShort + myInt);
+        System.out.println(myLong);
     }
 }
