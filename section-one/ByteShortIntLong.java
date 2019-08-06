@@ -46,7 +46,12 @@ public class Main {
         byte myByte = 23; 
         short myShort = 2344; 
         int myInt = 2324; 
-        long myLong = 50000 + 10*(myByte + myShort + myInt);
-        System.out.println(myLong);
+        //  Values on the right are assumed to be Ints, so casting not required.
+        // A max integer value will always fit within a long value. Not true with shorts
+        long longTotal = 50000 + 10*(myByte + myShort + myInt);
+        System.out.println(longTotal);
+        // short needs to be casted because int may not fit in short
+        short shortTotal = (short) (1000 + 10*(myByte + myShort + myInt));
+
     }
 }
