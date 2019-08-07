@@ -72,6 +72,19 @@ public class Main {
         if (wasCar) {
             System.out.println("wasCar is true");
         } 
-        
+
+        /// Operator Chalenge
+
+        double firstDouble = 20.00d;
+        double secondDouble = 80.00d;
+        double thirdDouble = 100.00d*(firstDouble + secondDouble);
+        thirdDouble = thirdDouble % 40.00d;
+        System.out.println(thirdDouble);
+        boolean isZero = (thirdDouble == 0) ? true : false;
+        System.out.println("Value of isZero is: " + isZero);
+        if (!isZero) {
+            System.out.println("Got some remainder");
+        }
+
     }
 }
