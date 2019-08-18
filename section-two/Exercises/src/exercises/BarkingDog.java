@@ -7,6 +7,9 @@ package exercises;
 //In all other cases return false.
 //If the hourOfDay parameter is less than 0 or greater than 23 return false.
 public class BarkingDog {
+	public static void main(String[] args) {
+		System.out.println(shouldWakeUp(true, 2));
+	}
     public static boolean shouldWakeUp (boolean barking, int hourOfDay)    {
         if ((hourOfDay < 8 && hourOfDay >= 0 && barking == true)|| (hourOfDay > 22 && hourOfDay <= 23)) {
             return true;
