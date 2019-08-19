@@ -3,14 +3,15 @@ package linkedList;
 public class Main {
 
 	public static void main(String[] args) {
-		IntLinkedList list = new IntLinkedList(2);
+		IntLinkedList list = new IntLinkedList();
 		list.insertItem(5);
+		list.insertItem(2);
 		list.insertItem(8);
 		list.printList();
 		
+		list.sortList();
+		System.out.println();
+		list.printList(); 
 		
-		list.deleteItem(5);
-		list.printList();
 	}
-
 }
